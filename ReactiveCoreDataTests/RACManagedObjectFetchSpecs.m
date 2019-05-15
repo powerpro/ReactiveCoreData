@@ -9,7 +9,7 @@
 #import <Specta.h>
 #define EXP_SHORTHAND
 #import <Expecta.h>
-#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 #import "NSManagedObject+ReactiveCoreData.h"
 #import "NSManagedObjectContext+ReactiveCoreData.h"
 #import "Parent.h"

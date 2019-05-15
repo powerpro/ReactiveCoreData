@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name         = "ReactiveCoreData"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "ReactiveCoreData (RCD) is an attempt to bring Core Data into the ReactiveCocoa (RAC) world."
-  s.homepage     = "https://github.com/apparentsoft/ReactiveCoreData.git"
+  s.homepage     = "https://github.com/powerpro/ReactiveCoreData.git"
   s.author       = { "Jacob Gorban" => "apparentsoft" }
-  s.source       = { :git => "https://github.com/apparentsoft/ReactiveCoreData.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/powerpro/ReactiveCoreData.git", :tag => "#{s.version}" }
   s.license      = 'Simplified BSD License'
   s.description  = "ReactiveCoreData (RCD) is an attempt to bring Core Data into the ReactiveCocoa (RAC) world."
 
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.7'
   
   s.source_files = 'ReactiveCoreData/*.{h,m}'
-  s.dependency 'ReactiveCocoa'
+  s.dependency 'ReactiveObjC'
 
   s.ios.frameworks = 'Foundation', 'UIKit', 'CoreData'
   s.osx.frameworks = 'Foundation', 'Cocoa', 'CoreData'

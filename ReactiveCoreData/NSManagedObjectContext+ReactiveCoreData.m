@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Apparent Software. All rights reserved.
 //
 
-#import <ReactiveCocoa/ReactiveCocoa.h>
-#import <ReactiveCocoa/NSNotificationCenter+RACSupport.h>
+#import <ReactiveObjC/ReactiveObjC.h>
+#import <ReactiveObjC/NSNotificationCenter+RACSupport.h>
 #import <objc/runtime.h>
 #import "NSManagedObjectContext+ReactiveCoreData.h"
 #import "RACSignal+ReactiveCoreData.h"

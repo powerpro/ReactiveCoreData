@@ -13,3 +13,4 @@ build/*
 xcuserdata
 profile
 .idea
+.DS_Store

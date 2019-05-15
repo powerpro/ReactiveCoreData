@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Apparent Software. All rights reserved.
 //
 
-#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 
 @interface RACSignal (ReactiveCoreData)
 
