@@ -13,7 +13,7 @@
 
 - (RACSignal *)fetchInMOC:(NSManagedObjectContext *)moc;
 {
-    return [[self flattenMap:^RACStream *(NSFetchRequest *req) {
+    return [[self flattenMap:^RACSignal *(NSFetchRequest *req) {
         if (req.fetchLimit == 1) {
             return [[moc executeRequest:req] map:^id(id value) {
                 return [value lastObject];
@@ -27,7 +27,7 @@
 
 - (RACSignal *)countInMOC:(NSManagedObjectContext *)moc;
 {
-    return [[self flattenMap:^RACStream *(NSFetchRequest *req) {
+    return [[self flattenMap:^RACSignal *(NSFetchRequest *req) {
         return [moc countRequest:req];
     }]  setNameWithFormat:@"[%@] -countInMOC:%@", self.name, moc];
 }
